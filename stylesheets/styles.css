@@ -786,6 +786,11 @@ section {
   margin: 20px 0;
   margin-top: 70px;
 }
+
+section p {
+  color: #d7cfbe;
+}
+
 section #title {
   border: 0;
   outline: none;

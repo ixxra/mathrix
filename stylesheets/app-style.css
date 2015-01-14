@@ -1,0 +1,14 @@
+#editor-container {
+    resize: both;
+    overflow: auto;
+}
+
+#editor { 
+    width: 100%;
+    height: 500px;
+}
+
+.ace_editor {
+    width: 100%;
+    height: 500px;    
+}
