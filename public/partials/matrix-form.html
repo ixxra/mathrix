@@ -1,0 +1,48 @@
+<form ng-controller="matrixFormController as ctrl">
+    <div class="row">
+        <header>
+            <h1>Step 1: Matrix Dimensions</h1>
+        </header>
+        <p>How many rows and columns the matrix have?</p>
+        <div class="container">
+        <label>Rows</label>
+        <input type="number" value="{{ctrl.rows}}">
+        <label>Columns</label>
+        <input type="number" value="{{ctrl.columns}}">
+        </div>
+    </div>
+    <div class="row">
+        <header>
+        <h2>Step 2: Update the matrix values</h2>
+        </header>        
+        <button 
+            class="btn btn-default"
+            ng-click="ctrl.randomize()"
+        >
+            Random
+        </button>
+        <button class="btn btn-danger">
+            Update
+        </button>
+    </div>
+    <div class="row">
+        <table class="table table-stripped">
+            <thead>
+                <tr>
+                    <td ng-repeat="hdr in ctrl.headers">{{hdr}}</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="row in ctrl.matrixData.matrix.val">
+                    <td ng-repeat="entry in row track by $index">
+                        <input 
+                            type="number" 
+                            ng-bind="entry"
+                            value="{{entry}}" 
+                        >
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</form>
