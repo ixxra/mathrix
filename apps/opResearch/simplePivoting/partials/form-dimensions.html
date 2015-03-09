@@ -1,0 +1,30 @@
+
+        <div class="form-group">
+            <label for="rows">Rows</label>
+            <input
+                name="rows"
+                class="form-control" 
+                type="number" 
+                ng-model="formData.rows"
+            >
+        </div>
+        <div class="form-group">
+            <label for="columns">Columns</label>
+            <input
+                name="columns"
+                class="form-control" 
+                type="number" 
+                ng-model="formData.columns"
+            >
+        </div>
+    <div class="form-group row">
+        <div class="col-xs-6 col-xs-offset-3">
+            <a 
+                ui-sref="form.matrix" 
+                class="btn btn-block btn-info"
+                ng-click="createMatrix()"
+            >
+                Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+            </a>
+        </div>
+    </div>

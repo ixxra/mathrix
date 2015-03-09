@@ -1,0 +1,25 @@
+<div id="form-container">
+    <div class="page-header text-center">
+        <h2>Matrix Pivoting</h2>
+        <div id="status-buttons" class="text-center">
+            <a ui-sref-active="active" ui-sref=".dimensions">
+                <span>1</span> Matrix Size
+            </a>
+        
+            <a ui-sref-active="active" ui-sref=".matrix">
+                <span>2</span> Matrix Entries
+            </a>
+        
+            <a ui-sref-active="active" ui-sref=".pivot">
+                <span>3</span> Pivot operations
+            </a>
+        </div>
+    </div>
+    <form id="signup-form">
+        <div id="form-views" ui-view></div>
+    </form>
+</div>
+
+<pre>
+    {{formData}}
+</pre>

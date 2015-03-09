@@ -1,0 +1,39 @@
+    <header>
+        <h2>Step 2: Update the matrix values</h2>
+    </header>        
+    <button 
+        class="btn btn-default"
+        ng-click="randomize()"
+    >
+        Random
+    </button>
+    
+        <table class="table table-stripped">
+            <thead>
+                <tr>
+                    <td ng-repeat="hdr in ctrl.headers">{{hdr}}</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="row in formData.matrix">
+                    <td ng-repeat="entry in row">
+                        <input 
+                            type="number"
+                            class="form-control" 
+                            ng-model="entry.val" 
+                        >
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    <div class="form-group row">
+        <div class="col-xs-6 col-xs-offset-3">
+            <a 
+                ui-sref="form.pivot" 
+                class="btn btn-block btn-info"
+            >
+                Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+            </a>
+        </div>
+    </div>
