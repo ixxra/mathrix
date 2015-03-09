@@ -1,0 +1,22 @@
+        <header>
+          <h1>Select the pivoting steps</h1>
+        </header>
+        <table class="table table-stripped">
+            <thead>
+              <tr>
+                <td ng-repeat="hdr in ctrl.headers">{{hdr}}</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="row in formData.matrix">
+                <td ng-repeat="entry in row track by $index">
+                  <button 
+                    class="btn btn-default"
+                    ng-click="pivot(entry)"
+                  >
+                    {{entry.val}}
+                  </button>
+                </td>
+              </tr>  
+            </tbody>
+        </table>
