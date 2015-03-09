@@ -4,20 +4,20 @@ app.config(function ($stateProvider, $urlRouterProvider){
     $stateProvider
         .state('form', {
             url: '/form',
-            templateUrl: '/partials/matrix-form.html',
+            templateUrl: 'partials/matrix-form.html',
             controller: 'FormController'
         })
         .state('form.dimensions', {
             url: '/dimensions',
-            templateUrl: '/partials/form-dimensions.html'
+            templateUrl: 'partials/form-dimensions.html'
         })
         .state('form.matrix', {
             url: '/matrix',
-            templateUrl: '/partials/form-matrix.html'
+            templateUrl: 'partials/form-matrix.html'
         })
         .state('form.pivot', {
             url: '/pivot',
-            templateUrl: '/partials/form-pivot.html'
+            templateUrl: 'partials/form-pivot.html'
         });
 
     $urlRouterProvider.otherwise('/form/dimensions');
