@@ -56,8 +56,6 @@ app.controller('FormController', function ($scope) {
     };
 
     $scope.pivot = function (entry){
-        console.log('pivot', entry);
-
         var pvt = entry.val,
             row = entry.row,
             col = entry.col;
